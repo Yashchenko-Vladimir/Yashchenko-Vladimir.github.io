@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BC_Chartter</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body class="container messages-wrapper">
+    <header>
+        <h5>Chatter</h5>
+    </header>
+    <div class="card chat-conversation">
+        <div class="row">
+            <div class="col-9">
+                <div class="d-flex align-content-start flex-wrap" data-headers="tabs">
+                    <ul class="nav nav-pills" data-nav-ul="navigation">
+                        <li class="nav-item" aria-controls="nav-login">
+                            <a class="nav-link active" href="#" name="nav-link" id="nav-Administrator">Administrator</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-flex align-content-start flex-wrap">
+                    You logged in as User
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 message-dialog" data-place-message="dialog">
+                <div name="nav-conversation" id="nav-dialog-Administrator" class="chat-wrapper">
+                    Administrator
+                    <ul class="card message-list" name="chatter" data-chat="Administrator">
+                    </ul>
+                    <form class="input-group" data-chat="form">
+                        <input class="form-control" data-chat="input" type="text" name="All">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">
+                                <i class="far fa-paper-plane"></i> Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card " data-users="list">
+                    <span class=""> List of participants </span>
+                    <ul class="card participants-list" data-partipipant="list">
+                        <li class="participant-row"><a href="#" class="online">Moshe</a> <i class="far fa-envelope"></i>
+                        </li>
+                        <li class="participant-row"><a href="#" class="offline">Fedar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/bundle.js"></script>
+</body>
+
+</html>
