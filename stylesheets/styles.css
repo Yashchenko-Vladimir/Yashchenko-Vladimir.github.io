@@ -14,6 +14,11 @@ ul {
 .participants-list {
     padding: .5rem;
     margin: .5rem;
+    background-color: transparent;
+    border: 0;
+    overflow-y: auto;
+    max-height: 69vh;
+    min-height: 25vh;
 }
 
 .chat-wrapper {
@@ -25,21 +30,24 @@ ul {
 }
 
 .chat-conversation{
-    max-height: 90vh;
-    min-height: 90vh;
-    background-image: url('../img/Randomized-Pattern.svg')
+    max-height: 85vh;
+    min-height: 85vh;
+    background-image: url('../img/Randomized-Pattern.svg');
+    border: 0;
 }
 .message-list{
     overflow-y: auto;
-    max-height: 65vh;
-    min-height: 65vh;
+    max-height: 67vh;
+    min-height: 67vh;
     list-style: none;
+    display: block;
+    /* flex: 1; */
     
 }
 
 .message-row{
-    /* display: flex; */
-    /* flex-direction: row; */
+    flex-direction: row;
+    display: flex;
     padding-bottom: 20px
 }
 
@@ -59,12 +67,13 @@ ul {
 }
 
 .message-message {
-    width: 400px;
+    /* width: 30px; */
     display: block;
+    margin-left: 0;
 }
 .message-dialog {
-    max-height: 75vh;
-    min-height: 75vh;
+    max-height: 70vh;
+    min-height: 70vh;
 }
 
 .me {
@@ -89,3 +98,26 @@ ul {
     cursor:pointer;
     overflow: hidden;
 }
+
+.nav-header{
+    position: relative;
+    display:inline;
+    /* align-items: center; */
+    max-width: 40vh;
+    justify-content: space-between;
+    background-color: #f8f9fa!important;
+    /* display: flex; */
+    
+    /* flex-wrap: wrap; */
+     padding: .5rem 1rem;
+     /* height: 20vh; */
+}
+
+.form-input {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.div-pati {
+    background-color: #f8f9fa!important;
+}
+
